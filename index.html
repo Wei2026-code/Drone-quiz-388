@@ -55,7 +55,7 @@
 
         /* 頂端無人機圖片區域 */
 
-        /* 圖片向左右延伸28px，寬度等於整個測驗欄位 */
+        /* 圖片寬度與整個測驗欄位相同 */
 .drone-header-icon {
     width: calc(100% + 56px);
     margin: -28px -28px 20px -28px;
@@ -63,19 +63,12 @@
     border-radius: 16px 16px 0 0;
 }
 
+/* PC與手機皆保持照片完整，不裁切 */
 .drone-header-icon img {
     display: block;
     width: 100%;
-    height: 260px;
-    object-fit: cover;
-    object-position: center 30%;
-}
-
-/* 手機版 */
-@media (max-width: 480px) {
-    .drone-header-icon img {
-        height: 200px;
-    }
+    height: auto;
+    object-fit: contain;
 }
 
         h1 {
