@@ -59,8 +59,16 @@
 .drone-header-icon {
     width: calc(100% + 56px);
     margin: -28px -28px 20px -28px;
-    overflow: hidden;
-    border-radius: 16px 16px 0 0;
+    overflow: visible;
+    border-radius: 0;
+}
+
+.drone-header-icon img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: none;
+    object-fit: contain;
 }
 
 /* PC與手機皆保持照片完整，不裁切 */
