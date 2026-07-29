@@ -53,16 +53,30 @@
             display: none !important;
         }
 
-        .drone-header-icon {
-            text-align: center;
-            margin-bottom: 8px;
-        }
+        /* 頂端無人機圖片區域 */
+.drone-header-icon {
+    width: 100%;
+    margin-bottom: 16px;
+    overflow: hidden;
+    border-radius: 12px;
+}
 
-        .drone-header-icon svg {
-            width: 48px;
-            height: 48px;
-            fill: var(--primary-color);
-        }
+/* 圖片寬度與下方功能窗格一致 */
+.drone-header-icon img {
+    display: block;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    object-position: center 30%;
+    border-radius: 12px;
+}
+
+/* 手機畫面降低圖片高度 */
+@media (max-width: 480px) {
+    .drone-header-icon img {
+        height: 200px;
+    }
+}
 
         h1 {
             font-size: 1.6rem;
